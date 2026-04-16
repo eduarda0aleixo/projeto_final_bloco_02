@@ -14,14 +14,5 @@ export class Categoria {
     @IsNotEmpty()
     @Column({ length: 250})
     descricao!: string;
-
-    @IsNotEmpty()
-    @Column({ type: 'date', nullable: false })
-    @Transform(({ value }) => value ? new Date(value).toLocaleDateString('pt-BR') : null)
-    dataFabricacao!: Date;
-
-    @IsNotEmpty()
-    @Column({ type: 'date', nullable: false })
-    @Transform(({ value }) => value ? new Date(value).toLocaleDateString('pt-BR') : null)
-    dataValidade!: Date;
+    
 }

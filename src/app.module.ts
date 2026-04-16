@@ -16,7 +16,7 @@ import { ProdutoModule } from './produto/produto.module';
     database: 'db_farmacia',
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
     synchronize: true,
-    logging: true,
+    logging: true ,
   }),
   CategoriaModule,
   ProdutoModule

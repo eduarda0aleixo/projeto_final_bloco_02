@@ -16,7 +16,7 @@ export class Categoria {
     @Column({ length: 250})
     descricao!: string;
 
-    @OneToMany(() => Produto, (produto) => produto.categoria)
-    produtos!: Produto[];
-    
+    @OneToMany(() => Produto, (produto) => produto.categoria) 
+    produtos!: Produto[]; 
+     
 }

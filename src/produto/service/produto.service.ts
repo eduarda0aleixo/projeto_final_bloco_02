@@ -65,4 +65,5 @@ export class ProdutoService {
         await this.produtoRepository.remove(produto);
         return produto;
     }
+    
 }

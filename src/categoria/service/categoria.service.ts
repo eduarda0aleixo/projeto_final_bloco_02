@@ -8,7 +8,6 @@ export class CategoriaService {
     constructor(
         @InjectRepository(Categoria)
         private categoriaRepository: Repository<Categoria>,
-        
     ) {}
 
     async findAll(): Promise<Categoria[]> {

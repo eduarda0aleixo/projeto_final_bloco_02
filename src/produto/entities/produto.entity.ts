@@ -38,8 +38,7 @@ export class Produto {
     @Column({ type: 'int', nullable: false })
     quantidadeEstoque!: number;
 
-    @ManyToOne(() => Categoria, (categoria) => categoria.produtos, { 
-        eager: false,
+    @ManyToOne(() => Categoria, (categoria) => categoria.produtos, {eager: false,
         onDelete: 'CASCADE' })
     @JoinColumn({ name: "categoria_id" }) 
     categoria!: Categoria;
